@@ -17,12 +17,9 @@ export default class CopyCat extends React.Component {
       <div style={divStyles}>
         <h1 style={{marginBottom: 80}}>Copy Cat{' '}{name || 'Tom'}</h1>
           <label htmlFor='toggle'>Toggle Copy Cat </label>
-        <input 
-        id='toggle'
-        type="checkbox" 
-        onChange={toggleTape}
-        />
+       
         <img 
+        id='toggle' 
         style={imgStyles}
           alt='cat'
           src={copying ? images.copycat : images.quietcat}
